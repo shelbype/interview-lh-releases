@@ -1,2 +1,23 @@
-# interview-lh-releases
-Public clean Windows runtime releases. Bring your own API keys; no personal data.
+# 面试工具 · Windows 64 位
+
+[下载最新版本与更新助手](https://github.com/shelbype/interview-lh-releases/releases/latest)
+
+这里仅发布干净运行包和更新助手，不包含任何人的 API Key、简历、历史或录音。软件本身无需注册或登录；云端模型使用各人自己申请的密钥。
+
+## 已经在使用旧版
+
+1. 保留原目录，下载并解压 UpdateAssistant 更新助手到另一目录。
+2. 结束场次、退出旧客户端，并运行旧目录里的“停止便携版.cmd”。
+3. 运行助手中的“旧版更新助手.cmd”，选择原目录，按提示确认升级。自己的 Key、设置和历史继续保留。
+
+以后从原设置中的“软件更新”，依次检查、下载、更新并重启；也可运行“一键更新.cmd”。正在面试、生成或录音时，需要先结束才能安装。
+
+## 第一次使用
+
+下载 InterviewHelper 完整运行包，完整解压后运行“诊断和配置.cmd”填写自己的 Key，再运行“启动面试狗.cmd”。不要用页面上的 Source code ZIP 代替运行包。
+
+## 更新与恢复
+
+更新校验 Ed25519 发布签名、文件大小与 SHA-256，保留个人配置及数据。失败时恢复先前程序；遇到中断请保留 updates 文件夹，并运行“恢复更新.cmd”。原目录缺少入口时可使用独立助手中的恢复入口。
+
+发布验收包含自动回归及本机原生升级演练；其他电脑的快捷键、声音、双屏与手机网络仍需实际设备检查。不要把使用后的整个目录上传到本仓库。
